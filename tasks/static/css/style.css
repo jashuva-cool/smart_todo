@@ -1,0 +1,64 @@
+body {
+    animation: fadeIn 1s ease-in;
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: #28a745 !important;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.list-group-item {
+    transition: transform 0.3s;
+}
+
+.list-group-item:hover {
+    transform: scale(1.02);
+}
+
+.login-card {
+    width: 350px;
+    border-radius: 15px;
+    animation: slideIn 0.8s ease;
+}
+
+.login-btn {
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.task-card {
+    width: 400px;
+    border-radius: 15px;
+    animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
